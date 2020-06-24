@@ -8,7 +8,7 @@ description: ^
 
 labels:
 - name: io.fabric8.s2i.version.jolokia
-  value: "1.6.2-redhat-00002"
+  value: "1.6.2"
 
 envs:
 - name: JBOSS_CONTAINER_JOLOKIA_MODULE
@@ -32,8 +32,9 @@ execute:
 
 artifacts:
 - name: jolokia-jvm
-  target: jolokia-jvm-1.6.2.redhat-00002-agent.jar
-  md5: 760f2fbaf6b142192f3cee2c99bfcbf8
+  target: jolokia-jvm-1.6.2-agent.jar
+  url: https://repo1.maven.org/maven2/org/jolokia/jolokia-jvm/1.6.2/jolokia-jvm-1.6.2.jar
+  md5: 10a426586c1eb8960ec9b070b35ad32c
 
 modules:
   install:
